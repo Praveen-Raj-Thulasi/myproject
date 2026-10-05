@@ -1,7 +1,6 @@
 {
     "campaignId":  "kiro-university-2026",
     "participantId":  "6468f4d8-1061-707e-681d-8c9b93512120",
-    "repoUrl":  "https://github.com/Praveen-Raj-Thulasi/echobox-prt",
     "lessons":  [
 
                 ],
@@ -10,5 +9,6 @@
                  ],
     "notes":  {
 
-              }
+              },
+    "repoUrl":  "https://github.com/Praveen-Raj-Thulasi/myproject"
 }
