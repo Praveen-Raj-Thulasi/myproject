@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "EchoBox Build Validator",
+      "trigger": "PostFileSave",
+      "description": "Runs the Vite production build after every source file edit to catch errors immediately",
+      "matcher": "\\.(jsx?|tsx?|css)$",
+      "action": {
+        "type": "command",
+        "command": "cd \"c:\\Users\\thila\\OneDrive\\Desktop\\myproject\\kiro-university-challenge\\prt-kiro-music\" && npm run build",
+        "timeout": 60
+      }
+    }
+  ]
+}
