@@ -1,0 +1,982 @@
+{
+  "pbtResults": {
+    "3.2 Write property test for `formatDuration` — Property 1": {
+      "status": "passed",
+      "lastRunTimestamp": 1790278314622
+    },
+    "3.6 Write property tests for `clampSeek` and `seekPercent` — Properties 7 and 8": {
+      "status": "passed",
+      "lastRunTimestamp": 1790278692264
+    },
+    "3.7 Write property test for queue navigation — Property 11": {
+      "status": "passed",
+      "lastRunTimestamp": 1790278807597
+    }
+  },
+  "executionHistory": {
+    "1.1 Initialise Vite + React project and install all dependencies": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276506184
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276531921
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276819131
+      }
+    ],
+    "1.2 Create full folder structure and placeholder files": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276507789
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276823729
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276994282
+      }
+    ],
+    "1.3 Add CSS foundation files": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276508132
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276824308
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276994879
+      }
+    ],
+    "1.4 Add sample audio placeholder files and catalog": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276508472
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276825056
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276995299
+      }
+    ],
+    "2.1 Define PlayerState, action constants, and the player reducer": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276508659
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790277306661
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280206259
+      }
+    ],
+    "2.2 Write unit tests for the player reducer": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276508844
+      },
+      {
+        "executionId": "37789dd9-e7b7-4620-a6e1-888a40fb3171",
+        "chatSessionId": "sess_73a12ee2-16fd-4c03-9d05-3f72090e6077",
+        "timestamp": 1790278002106
+      },
+      {
+        "executionId": "37789dd9-e7b7-4620-a6e1-888a40fb3171",
+        "chatSessionId": "sess_73a12ee2-16fd-4c03-9d05-3f72090e6077",
+        "timestamp": 1790278151210
+      }
+    ],
+    "3.1 Implement `formatDuration(seconds)` in `src/utils/formatDuration.js`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276509062
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790277307201
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280212604
+      }
+    ],
+    "3.2 Write property test for `formatDuration` — Property 1": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276509295
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278206842
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278824808
+      }
+    ],
+    "3.3 Implement `filterTracks(catalog, query)` in `src/utils/filterTracks.js`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276509574
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790277307903
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280221383
+      }
+    ],
+    "3.4 Write property tests for `filterTracks` — Properties 2 and 3": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276509768
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278212919
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278829122
+      }
+    ],
+    "3.5 Implement `clampSeek`, `seekPercent` in `src/utils/queueUtils.js`; implement `nextTrack`, `previousTrack` queue helpers in the same file": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276510311
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790277308267
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280228388
+      }
+    ],
+    "3.6 Write property tests for `clampSeek` and `seekPercent` — Properties 7 and 8": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276510594
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278219191
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278835843
+      }
+    ],
+    "3.7 Write property test for queue navigation — Property 11": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276510817
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278225119
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278842181
+      }
+    ],
+    "3.8 Implement `storageUtils.js` — localStorage helpers and volume parsing": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276511033
+      },
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790277308871
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280235357
+      }
+    ],
+    "3.9 Write property tests for volume persistence and playlist serialization — Properties 9, 10, 19, 20": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276511275
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278230563
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278848386
+      }
+    ],
+    "4. Checkpoint — verify utilities": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276511553
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278865566
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278937265
+      }
+    ],
+    "5.1 Create `PlayerContext` and skeleton `PlayerProvider`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276511811
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278864921
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278942329
+      }
+    ],
+    "5.2 Wire `useAudioEngine` and `usePlaylistManager` into `PlayerProvider`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276512271
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278953716
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279359494
+      }
+    ],
+    "6.1 Implement core audio event wiring in `useAudioEngine`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276512440
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279373026
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279479386
+      }
+    ],
+    "6.2 Implement `loadTrack`, `seek`, `setVolume` in `useAudioEngine`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276512656
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279491476
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280243200
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280427277
+      }
+    ],
+    "6.3 Implement debounced `play`/`pause` and `skipNext`/`skipPrevious` in `useAudioEngine`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276512875
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280441555
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280556167
+      }
+    ],
+    "6.4 Write property test for debounced play/pause — Property 6": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276513062
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280569622
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281139404
+      }
+    ],
+    "6.5 Write property test for track switch position reset — Property 5": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276513259
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280570010
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281139708
+      }
+    ],
+    "6.6 Write example-based unit tests for audio engine error paths": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276513445
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280570628
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281162276
+      }
+    ],
+    "7.1 Implement `usePlaylistManager` with `create` and `remove`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276513623
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790278954038
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279359039
+      }
+    ],
+    "7.2 Implement `addTrack` and `removeTrack` in `usePlaylistManager`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276513819
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279373373
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279479676
+      }
+    ],
+    "7.3 Write property tests for playlist CRUD — Properties 12–18": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276514102
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279491938
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280243976
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280427906
+      }
+    ],
+    "7.4 Write example-based tests for localStorage failure and edge cases": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276514271
+      },
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279492383
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280244358
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280428320
+      }
+    ],
+    "8. Checkpoint — verify hooks": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276514441
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283800982
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283898252
+      }
+    ],
+    "9.1 Implement `TrackInfo` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276514628
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280571152
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281130950
+      }
+    ],
+    "9.2 Implement `SeekBar` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276514850
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280571755
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281131643
+      }
+    ],
+    "9.3 Implement `VolumeControl` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276515160
+      },
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280572292
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281234015
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281337720
+      }
+    ],
+    "9.4 Implement `PlaybackControls` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276515494
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281349899
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281605923
+      }
+    ],
+    "9.5 Implement `NowPlayingBar` component and its CSS": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276515725
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281619133
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281984714
+      }
+    ],
+    "9.6 Write example-based unit tests for NowPlayingBar components": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276516179
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281619905
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281987488
+      }
+    ],
+    "10.1 Implement `TrackItem` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276517108
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281351112
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281606900
+      }
+    ],
+    "10.2 Implement `TrackList` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276517325
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281620765
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281986465
+      }
+    ],
+    "10.3 Implement `SearchBar` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276517563
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281352400
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281607254
+      }
+    ],
+    "10.4 Implement `MainContent` component and `TrackList` CSS": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276517808
+      },
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281621563
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281988018
+      }
+    ],
+    "10.5 Write example-based unit tests for MainContent components": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276518059
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282002483
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282210595
+      }
+    ],
+    "11.1 Implement `PlaylistItem` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276518318
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282003732
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282211177
+      }
+    ],
+    "11.2 Implement `PlaylistList` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276518493
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282226172
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282421488
+      }
+    ],
+    "11.3 Implement `CreatePlaylistForm` component": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276518784
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282227436
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282422432
+      }
+    ],
+    "11.4 Implement `Sidebar` component and its CSS": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276519096
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282436160
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282568780
+      }
+    ],
+    "11.5 Write example-based unit test for delete playlist confirmation": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276519325
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282584673
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283085000
+      }
+    ],
+    "12.1 Assemble `App.jsx` with `PlayerProvider` and full layout": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276519583
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282585745
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283086126
+      }
+    ],
+    "12.2 Implement responsive CSS layout": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276519799
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283100732
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283301808
+      }
+    ],
+    "12.3 Write a snapshot smoke test for the responsive dark theme": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276519992
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283318897
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283593799
+      }
+    ],
+    "13.1 Add \"Add to playlist\" affordance on `TrackItem`": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276520217
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283317933
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283594289
+      }
+    ],
+    "13.2 Add \"Remove from playlist\" button on tracks shown in playlist view": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276520524
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283608597
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283784796
+      }
+    ],
+    "14. Final checkpoint — full integration": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276520723
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283914801
+      },
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790284044840
+      }
+    ],
+    "1. Scaffold project and configure tooling": [
+      {
+        "executionId": "f7041666-ea85-4157-a91a-17f12e8a68a4",
+        "chatSessionId": "sess_d15208ca-28ef-47a1-b47b-33ad33a36d48",
+        "timestamp": 1790276995513
+      }
+    ],
+    "5. PlayerContext and PlayerProvider": [
+      {
+        "executionId": "68d3ee1d-3c1e-47f3-9b73-db5298782ae3",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790279360068
+      }
+    ],
+    "2. Core data models and reducer": [
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280206875
+      }
+    ],
+    "3. Utility functions": [
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280235933
+      }
+    ],
+    "7. `usePlaylistManager` hook": [
+      {
+        "executionId": "ec079c64-d677-4386-b04a-c0c592ab0af8",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790280428485
+      }
+    ],
+    "6. `useAudioEngine` hook": [
+      {
+        "executionId": "d3b35b09-06d5-4c91-819b-b6e30c949fc4",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281163128
+      }
+    ],
+    "9. NowPlayingBar components": [
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790281988558
+      }
+    ],
+    "10. MainContent components": [
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790282211753
+      }
+    ],
+    "11. Sidebar components": [
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283085768
+      }
+    ],
+    "12. App wiring and responsive layout": [
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283594818
+      }
+    ],
+    "13. Add track-to-playlist UI wiring": [
+      {
+        "executionId": "6641b550-9fcd-46ab-9449-cba67b82e053",
+        "chatSessionId": "sess_1d904b61-931e-46dd-956e-43d36e4695b3",
+        "timestamp": 1790283786138
+      }
+    ]
+  }
+}

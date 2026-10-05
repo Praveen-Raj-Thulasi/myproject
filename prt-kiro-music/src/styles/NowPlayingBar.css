@@ -1,0 +1,264 @@
+/* NowPlayingBar styles — populated in task 9.5 */
+
+/* ── TrackInfo ─────────────────────────────────────────────── */
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0; /* allow flex children to shrink below content size */
+  gap: var(--space-1);
+}
+
+.track-title,
+.track-artist {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.track-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+}
+
+.track-artist {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-secondary);
+}
+
+/* ── VolumeControl ─────────────────────────────────────────── */
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.volume-control__icon {
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  flex-shrink: 0;
+  color: var(--color-text-primary);
+}
+
+.volume-control__slider {
+  width: 100px;
+  height: 4px;
+  accent-color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* ── PlaybackControls ──────────────────────────────────────── */
+.playback-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.playback-controls__loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* CSS-animated spinner */
+.playback-controls__spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-text-muted);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.playback-controls__buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.playback-controls__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xl);
+  line-height: 1;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+.playback-controls__btn:hover:not(:disabled) {
+  color: var(--color-accent);
+}
+
+.playback-controls__btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.playback-controls__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.playback-controls__btn--play,
+.playback-controls__btn--pause {
+  font-size: 1.75rem;
+}
+
+/* ── NowPlayingBar (fixed bottom bar) ─────────────────────── */
+.now-playing-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--now-playing-height);
+  z-index: var(--z-now-playing);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 0 var(--space-5);
+
+  background-color: var(--color-bg-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Left section — TrackInfo; takes a fixed share, shrinks with ellipsis */
+.now-playing-bar__section--left {
+  flex: 0 1 240px;
+  min-width: 0; /* allow text-overflow: ellipsis to kick in */
+  display: flex;
+  align-items: center;
+}
+
+/* Centre section — PlaybackControls; grows to fill available space */
+.now-playing-bar__section--center {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Right section — VolumeControl; fixed share, aligned to the right */
+.now-playing-bar__section--right {
+  flex: 0 1 180px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ── Mobile: compact NowPlayingBar ── */
+@media (max-width: 640px) {
+  .now-playing-bar {
+    /* Maintain good height for touch targets on mobile */
+    height: auto;
+    min-height: 72px;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  /* Track info shrinks but stays visible on first row */
+  .now-playing-bar__section--left {
+    flex: 1 1 100px;
+    min-width: 0;
+    order: 1;
+  }
+
+  /* Playback controls take full row when wrapped */
+  .now-playing-bar__section--center {
+    flex: 1 1 100%;
+    order: 3; /* push seek+buttons to second row */
+    min-width: 0;
+  }
+
+  /* Volume control shares first row */
+  .now-playing-bar__section--right {
+    flex: 0 1 auto;
+    order: 2;
+  }
+
+  /* Narrower volume slider on mobile */
+  .volume-control__slider {
+    width: 70px;
+  }
+
+  /* Smaller play button on mobile for better layout */
+  .playback-controls__btn--play,
+  .playback-controls__btn--pause {
+    font-size: 1.5rem;
+  }
+
+  .playback-controls__buttons {
+    gap: var(--space-3);
+  }
+}
+
+/* ── Error banner ── */
+.now-playing-bar__error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background-color: var(--color-error);
+  color: #fff;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  z-index: calc(var(--z-now-playing) + 1);
+}
+
+.now-playing-bar__error-msg {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.now-playing-bar__error-dismiss {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.now-playing-bar__error-dismiss:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.now-playing-bar__error-dismiss:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}

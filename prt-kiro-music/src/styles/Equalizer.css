@@ -1,0 +1,32 @@
+/* Equalizer — animated vertical bars shown in NowPlayingBar */
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 24px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.equalizer__bar {
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to top, #FF6B00, #FFB347);
+  animation: eq-bounce 0.8s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+.equalizer--paused .equalizer__bar {
+  animation-play-state: paused;
+}
+
+.equalizer__bar:nth-child(1) { height: 60%; animation-delay: 0s;    animation-duration: 0.7s; }
+.equalizer__bar:nth-child(2) { height: 80%; animation-delay: 0.15s; animation-duration: 0.9s; }
+.equalizer__bar:nth-child(3) { height: 50%; animation-delay: 0.05s; animation-duration: 0.6s; }
+.equalizer__bar:nth-child(4) { height: 90%; animation-delay: 0.2s;  animation-duration: 0.8s; }
+.equalizer__bar:nth-child(5) { height: 65%; animation-delay: 0.1s;  animation-duration: 1.0s; }
+
+@keyframes eq-bounce {
+  0%   { transform: scaleY(0.3); }
+  100% { transform: scaleY(1);   }
+}

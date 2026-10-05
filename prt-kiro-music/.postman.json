@@ -1,0 +1,6 @@
+{
+  "workspaceId": "7a649d00-87fa-4456-8f7e-54a1075e0e23",
+  "collectionId": "52907543-df2b2b1b-9d8b-4e76-b6a4-4fceb38eda7a",
+  "environmentId": null,
+  "note": "Audio asset collection for EchoBox Music. Requires the Vite dev server running on http://localhost:5173 before running."
+}

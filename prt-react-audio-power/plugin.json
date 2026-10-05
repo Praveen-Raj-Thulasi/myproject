@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "echobox-react-audio",
+  "version": "1.0.0",
+  "description": "Reusable guidance for building React music players with HTML5 Audio, shared playback state, playlists, and playback controls.",
+  "author": {
+    "name": "Praveen Raj Thulasi S"
+  },
+  "keywords": [
+    "react audio",
+    "music player",
+    "html5 audio",
+    "playlist",
+    "playback controls",
+    "audio engine"
+  ],
+  "license": "MIT"
+}

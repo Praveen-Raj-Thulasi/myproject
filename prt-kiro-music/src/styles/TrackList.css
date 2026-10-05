@@ -1,0 +1,283 @@
+/* TrackList & TrackItem styles — aligned with Design System guidelines */
+
+.track-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  user-select: none;
+}
+
+.track-item:hover {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+.track-item:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.track-item--active {
+  color: var(--color-accent);
+  background-color: rgba(255, 69, 0, 0.15);
+}
+
+.track-item--active:hover {
+  color: var(--color-accent-hover);
+  background-color: rgba(255, 69, 0, 0.22);
+}
+
+.track-item__title {
+  flex: 1 1 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.track-item__artist {
+  flex: 1 1 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.track-item__duration {
+  flex: 0 0 auto;
+  font-size: var(--font-size-sm);
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+  min-width: 3rem;
+  text-align: right;
+}
+
+/* ── SearchBar ── */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-5);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.search-bar:hover {
+  background-color: var(--color-bg-overlay);
+}
+
+.search-bar:focus-within {
+  border-color: var(--color-border-focus);
+  background-color: var(--color-bg-elevated);
+  box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.15);
+}
+
+.search-bar__label {
+  display: flex;
+  align-items: center;
+  cursor: text;
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.search-bar:focus-within .search-bar__label {
+  color: var(--color-accent);
+}
+
+.search-bar__icon {
+  font-size: var(--font-size-base);
+  line-height: 1;
+  user-select: none;
+}
+
+.search-bar__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  caret-color: var(--color-accent);
+}
+
+.search-bar__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* ── TrackList container & empty state ── */
+.track-list-container {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 0; /* forces flex child to respect flex: 1 and scroll instead of expanding */
+}
+
+.track-list__empty {
+  padding: var(--space-8) var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  text-align: center;
+  line-height: var(--line-height-normal);
+}
+
+/* ── Add-to-playlist affordance ── */
+
+.track-item__add-wrapper {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.track-item__add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--space-6);
+  height: var(--space-6);
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: 1;
+  cursor: pointer;
+  opacity: 1;
+  transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.track-item__add-btn:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-accent);
+  background-color: rgba(255, 69, 0, 0.12);
+}
+
+.track-item__add-btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-pill);
+}
+
+.track-item__playlist-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + var(--space-2));
+  z-index: 100;
+  list-style: none;
+  margin: 0;
+  padding: var(--space-1) 0;
+  min-width: 160px;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.track-item__playlist-menu-item {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.track-item__playlist-menu-item:hover,
+.track-item__playlist-menu-item:focus {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+  outline: none;
+}
+
+.track-item__playlist-menu-empty {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  cursor: default;
+  white-space: nowrap;
+}
+
+/* Feedback toast (success / error) */
+.track-item__feedback {
+  position: absolute;
+  right: 0;
+  top: calc(100% + var(--space-2));
+  z-index: 101;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  pointer-events: none;
+  animation: track-feedback-fade 2s forwards;
+}
+
+.track-item__feedback--success {
+  background-color: var(--color-success);
+  color: var(--color-bg-base);
+}
+
+.track-item__feedback--error {
+  background-color: var(--color-error);
+  color: #fff;
+}
+
+@keyframes track-feedback-fade {
+  0%   { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ── SearchBar clear button ── */
+.search-bar__clear {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  padding: var(--space-1) var(--space-2);
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.search-bar__clear:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-overlay);
+}
+
+.search-bar__clear:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}

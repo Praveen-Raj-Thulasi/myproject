@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+  <!-- EchoBox Music Icon: Musical note with echo waves -->
+  <rect width="48" height="48" rx="8" fill="#7c6af7"/>
+  
+  <!-- Musical note -->
+  <path d="M30 12 L30 28 C30 30.2091 28.2091 32 26 32 C23.7909 32 22 30.2091 22 28 C22 25.7909 23.7909 24 26 24 C27.1046 24 28 24.8954 28 26 L28 16 L34 14 L34 20 Z" fill="white"/>
+  
+  <!-- Echo waves -->
+  <circle cx="16" cy="28" r="2" fill="white" opacity="0.6"/>
+  <circle cx="12" cy="28" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="8" cy="28" r="1" fill="white" opacity="0.2"/>
+  
+  <!-- Playback indicator -->
+  <circle cx="24" cy="40" r="2" fill="#47bfff"/>
+</svg>

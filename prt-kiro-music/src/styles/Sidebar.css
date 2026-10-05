@@ -1,0 +1,427 @@
+/* Sidebar styles — populated in task 11.4 */
+
+/* ── PlaylistItem ── */
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  list-style: none;
+}
+
+.playlist-item:hover {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+}
+
+.playlist-item--active {
+  background-color: var(--color-bg-elevated);
+  color: var(--color-accent);
+}
+
+.playlist-item--active:hover {
+  color: var(--color-accent-hover);
+}
+
+.playlist-item__play,
+.playlist-item__delete {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: var(--font-size-xs);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  line-height: 1;
+}
+
+.playlist-item__play:hover {
+  color: var(--color-accent);
+  background-color: rgba(255, 69, 0, 0.12);
+}
+
+.playlist-item__delete:hover {
+  color: var(--color-error);
+  background-color: rgba(255, 90, 95, 0.12);
+}
+
+.playlist-item__play:focus-visible,
+.playlist-item__delete:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.playlist-item__info {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.playlist-item__name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-item__count {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* ── CreatePlaylistForm ── */
+
+.create-playlist-form {
+  padding: var(--space-2) var(--space-3);
+}
+
+.create-playlist-form__field {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.create-playlist-form__input {
+  flex: 1 1 0;
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.create-playlist-form__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.create-playlist-form__input:focus {
+  border-color: var(--color-border-focus);
+}
+
+.create-playlist-form__submit {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  line-height: 1;
+  transition: background-color var(--transition-fast);
+}
+
+.create-playlist-form__submit:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.create-playlist-form__submit:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.create-playlist-form__error {
+  margin: var(--space-1) 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+}
+
+/* ── Sidebar shell ── */
+
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background-color: var(--color-bg-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.sidebar__heading {
+  flex-shrink: 0;
+  padding: var(--space-5) var(--space-4) var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ── PlaylistList ── */
+
+.playlist-list {
+  flex: 1 1 0;
+  overflow-y: auto;
+  padding: 0 var(--space-2);
+}
+
+/* Scrollbar styling (Webkit) */
+.playlist-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.playlist-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.playlist-list::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+.playlist-list__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.playlist-list__empty {
+  padding: var(--space-4) var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* ── Inline delete-confirmation row ── */
+
+.playlist-item__confirm {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--color-bg-overlay);
+  border-radius: var(--radius-sm);
+  margin: 0 0 var(--space-1);
+}
+
+.playlist-item__confirm-text {
+  flex: 1 1 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-item__confirm-btn {
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-3);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text-secondary);
+}
+
+.playlist-item__confirm-btn:hover {
+  background-color: var(--color-bg-overlay);
+  color: var(--color-text-primary);
+}
+
+.playlist-item__confirm-btn--danger {
+  background-color: var(--color-error);
+  color: #fff;
+}
+
+.playlist-item__confirm-btn--danger:hover {
+  background-color: #e04e53;
+}
+
+.playlist-item__confirm-btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* ── Expanded track list inside the active playlist ── */
+
+.playlist-tracks {
+  list-style: none;
+  margin: 0 0 var(--space-1);
+  padding: var(--space-1) var(--space-3) var(--space-1) calc(var(--space-3) + 1.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: var(--color-bg-overlay);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+.playlist-tracks__empty {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  padding: var(--space-1) 0;
+  font-style: italic;
+}
+
+.playlist-track-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.playlist-track-row:hover {
+  background-color: var(--color-bg-elevated);
+}
+
+.playlist-track-row__title {
+  flex: 1 1 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  text-align: left;
+  padding: var(--space-1) var(--space-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast);
+}
+
+.playlist-track-row__title:hover {
+  color: var(--color-text-primary);
+}
+
+.playlist-track-row__title:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+.playlist-track-row__remove {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+  padding: var(--space-1) var(--space-1);
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.playlist-track-row__remove:hover {
+  color: var(--color-error);
+  background-color: rgba(255, 90, 95, 0.12);
+}
+
+.playlist-track-row__remove:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* ── Mobile: sidebar becomes a compact horizontal strip ── */
+@media (max-width: 640px) {
+  .sidebar {
+    /* Override fixed column width — fill the full viewport width */
+    width: 100%;
+    min-width: 0;
+    /* Collapse to a short horizontal strip instead of a tall column */
+    height: auto;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-3);
+    /* Prevent the sidebar strip from growing excessively */
+    flex-shrink: 0;
+  }
+
+  .sidebar__heading {
+    padding: 0 var(--space-3) 0 0;
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+  }
+
+  /* Playlist list scrolls horizontally on mobile */
+  .playlist-list {
+    flex: 1 1 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .playlist-list__items {
+    flex-direction: row;
+    gap: var(--space-2);
+    flex-wrap: nowrap;
+    padding: var(--space-1) 0;
+  }
+
+  /* Playlist items become compact chips */
+  .playlist-item {
+    flex-shrink: 0;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-bg-elevated);
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+  }
+
+  .playlist-item__info {
+    max-width: 100px;
+  }
+
+  .playlist-item__count {
+    display: none;
+  }
+
+  /* Keep action buttons visible but compact */
+  .playlist-item__play,
+  .playlist-item__delete {
+    padding: var(--space-1);
+    font-size: var(--font-size-xs);
+  }
+
+  /* Create form wraps below the list on mobile */
+  .create-playlist-form {
+    width: 100%;
+    padding: var(--space-2) 0 0;
+  }
+
+  /* Delete confirm row stays full width */
+  .playlist-item__confirm {
+    width: 100%;
+  }
+}
+
+.create-playlist-form__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.playlist-track-row--active .playlist-track-row__title {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}

@@ -1,0 +1,130 @@
+---
+inclusion: always
+---
+
+# Build and Development Workflow
+
+## Project Overview
+
+EchoBox Music is a React application built with Vite. The project uses JavaScript, CSS, the HTML5 Audio API, and browser localStorage for client-side persistence.
+
+The application does not require a backend, authentication service, external music API, or database.
+
+## Available npm Scripts
+
+Use the scripts defined in `package.json`:
+
+- `npm run dev` — starts the Vite development server.
+- `npm run build` — creates the production build.
+- `npm run preview` — previews the production build locally.
+- `npm test` — runs the Vitest test suite.
+
+Do not introduce new scripts unless the project requires them.
+
+## Development Workflow
+
+1. Install dependencies with `npm install` when setting up the project.
+2. Start development with `npm run dev`.
+3. Make changes within the existing React/Vite project structure.
+4. Run the relevant tests with `npm test`.
+5. Create a production build with `npm run build` before considering a change complete.
+6. Use `npm run preview` when a local preview of the production build is needed.
+
+Changes should preserve the existing application architecture and behavior described in the project specification.
+
+## Project Structure
+
+The project follows the existing Vite/React structure.
+
+- `src/` contains application source code.
+- React components provide the user interface.
+- Context and hooks manage player and playlist state.
+- Audio handling is implemented through the HTML5 Audio API.
+- CSS contains the application's responsive dark-theme styling.
+- Test files contain Vitest unit tests and property-based tests.
+- `.kiro/` contains Kiro specifications, steering files, hooks, and related project configuration.
+- `public/` contains static assets when used by the application.
+- `package.json` defines dependencies and npm scripts.
+- `vite.config.js` contains Vite configuration.
+
+Do not create additional architectural layers unless they are required by the existing project design.
+
+## Adding Audio Tracks
+
+Audio tracks should follow the existing track data structure used by the application.
+
+A track contains:
+
+- `id`
+- `title`
+- `artist`
+- `album`
+- `duration`
+- `src`
+
+Audio sources should be local/sample audio files supported by the browser's HTML5 Audio API.
+
+When adding a track:
+
+1. Add the audio asset to the project's existing static asset location.
+2. Add the corresponding track metadata where the application catalog is defined.
+3. Ensure the `src` points to the actual audio asset.
+4. Verify that the track loads and plays in the browser.
+5. Run the existing tests and production build.
+
+Do not introduce external streaming services or APIs for the local music catalog.
+
+## Testing
+
+The project uses Vitest for automated testing and fast-check for property-based testing.
+
+Run the complete test suite with:
+
+`npm test`
+
+Tests should cover both example-based behavior and the correctness properties defined by the project design.
+
+When changing player behavior, playlist behavior, persistence, search, or audio handling, update the corresponding tests when the existing behavior or contract changes.
+
+## Production Build
+
+The production build is generated with:
+
+`npm run build`
+
+The build should complete successfully before a change is considered ready.
+
+Use:
+
+`npm run preview`
+
+to inspect the generated production build locally.
+
+Do not add deployment infrastructure that is not already supported by the project.
+
+## Debugging Practices
+
+When debugging:
+
+- Reproduce the problem before changing code.
+- Check the browser console for runtime errors.
+- Check the browser network and media information when audio fails to load.
+- Verify localStorage state when investigating persistence problems.
+- Run the relevant automated tests after making a fix.
+- Run the complete test suite before finalizing significant changes.
+- Run the production build to catch build-time issues.
+
+Prefer fixing the underlying behavior rather than adding workarounds that bypass the application's existing architecture.
+
+## Build and Deployment Expectations
+
+EchoBox Music is a client-side React/Vite application.
+
+The supported production workflow is:
+
+1. Run the test suite.
+2. Run the Vite production build.
+3. Verify the generated application locally with the Vite preview server.
+4. Deploy the generated Vite output using a static hosting environment when deployment is required.
+
+No backend deployment, database deployment, authentication infrastructure, or external music-service deployment is required by the current project.

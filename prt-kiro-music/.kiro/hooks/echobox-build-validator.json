@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "EchoBox Build Validator",
+      "trigger": "PostToolUse",
+      "matcher": "^str_replace$",
+      "description": "Runs the production build after EchoBox source files are edited by Kiro using str_replace tool.",
+      "action": {
+        "type": "command",
+        "command": "npm run build"
+      },
+      "timeout": 60
+    }
+  ]
+}

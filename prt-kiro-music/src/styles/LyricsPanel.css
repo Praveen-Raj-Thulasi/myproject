@@ -1,0 +1,120 @@
+/* LyricsPanel — synced scrolling lyrics display */
+
+.lyrics-panel {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-width: 220px;
+  max-width: 320px;
+  height: 100%;
+  background-color: var(--color-bg-surface);
+  border-left: 1px solid var(--color-border);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ── Header ── */
+.lyrics-panel__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.lyrics-panel__label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.lyrics-panel__track-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ── Lyrics list ── */
+.lyrics-panel__list {
+  flex: 1 1 0;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  scroll-behavior: smooth;
+}
+
+.lyrics-panel__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.lyrics-panel__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lyrics-panel__list::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+/* ── Lyric lines ── */
+.lyrics-panel__line {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-normal),
+              transform var(--transition-normal),
+              background-color var(--transition-normal);
+  cursor: default;
+}
+
+/* Past lines — dimmed */
+.lyrics-panel__line--past {
+  color: var(--color-text-secondary);
+  opacity: 0.45;
+}
+
+/* Active line — bright orange, scaled up, glowing */
+.lyrics-panel__line--active {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  background-color: rgba(255, 69, 0, 0.1);
+  transform: scale(1.04);
+  box-shadow: 0 0 18px rgba(255, 69, 0, 0.25);
+  opacity: 1;
+}
+
+/* ── Empty / placeholder state ── */
+.lyrics-panel--empty {
+  justify-content: center;
+  align-items: center;
+}
+
+.lyrics-panel__placeholder {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-5);
+  line-height: var(--line-height-normal);
+}
+
+/* ── Mobile: hide lyrics panel to save space ── */
+@media (max-width: 900px) {
+  .lyrics-panel {
+    display: none;
+  }
+}

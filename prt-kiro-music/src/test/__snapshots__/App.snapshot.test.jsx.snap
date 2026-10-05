@@ -1,0 +1,277 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App — responsive dark theme snapshot (Req 15.1–15.5) > renders the full layout without throwing and matches snapshot 1`] = `
+<div>
+  <div
+    class="app-layout"
+  >
+    <aside
+      aria-label="Playlists"
+      class="sidebar"
+    >
+      <h2
+        class="sidebar__heading"
+      >
+        Your Playlists
+      </h2>
+      <section
+        class="playlist-list"
+      >
+        <p
+          class="playlist-list__empty"
+        >
+          No playlists yet. Create one below!
+        </p>
+      </section>
+      <form
+        class="create-playlist-form"
+      >
+        <p
+          class="create-playlist-form__label"
+        >
+          Create a playlist
+        </p>
+        <div
+          class="create-playlist-form__field"
+        >
+          <input
+            aria-label="New playlist name"
+            class="create-playlist-form__input"
+            placeholder="New playlist name…"
+            type="text"
+            value=""
+          />
+          <button
+            aria-label="Create playlist"
+            class="create-playlist-form__submit"
+            type="submit"
+          >
+            +
+          </button>
+        </div>
+      </form>
+    </aside>
+    <main
+      class="main-content"
+    >
+      <div
+        class="search-bar"
+      >
+        <label
+          class="search-bar__label"
+          for="search-input"
+        >
+          <span
+            aria-hidden="true"
+            class="search-bar__icon"
+          >
+            🔍
+          </span>
+        </label>
+        <input
+          aria-label="Search tracks"
+          autocomplete="off"
+          class="search-bar__input"
+          id="search-input"
+          placeholder="Search tracks..."
+          spellcheck="false"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="track-list-container"
+      >
+        <ul
+          class="track-list"
+        >
+          <li
+            class="track-item"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="track-item__title"
+            >
+              Naanga Naalu Peru
+            </span>
+            <span
+              class="track-item__artist"
+            >
+              Unknown Artist
+            </span>
+            <span
+              class="track-item__duration"
+            >
+              3:17
+            </span>
+            <span
+              class="track-item__add-wrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-label="Add Naanga Naalu Peru to a playlist"
+                class="track-item__add-btn"
+                title="Add to playlist"
+                type="button"
+              >
+                +
+              </button>
+            </span>
+          </li>
+          <li
+            class="track-item"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="track-item__title"
+            >
+              Raathu Raasan
+            </span>
+            <span
+              class="track-item__artist"
+            >
+              Unknown Artist
+            </span>
+            <span
+              class="track-item__duration"
+            >
+              3:15
+            </span>
+            <span
+              class="track-item__add-wrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-label="Add Raathu Raasan to a playlist"
+                class="track-item__add-btn"
+                title="Add to playlist"
+                type="button"
+              >
+                +
+              </button>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <footer
+    aria-label="Now playing"
+    class="now-playing-bar"
+    role="contentinfo"
+  >
+    <div
+      class="now-playing-bar__section now-playing-bar__section--left"
+    >
+      <div
+        class="track-info"
+      >
+        <span
+          class="track-title"
+        >
+          No track selected
+        </span>
+        <span
+          class="track-artist"
+        >
+          —
+        </span>
+      </div>
+    </div>
+    <div
+      class="now-playing-bar__section now-playing-bar__section--center"
+    >
+      <div
+        class="playback-controls"
+      >
+        <div
+          class="playback-controls__buttons"
+        >
+          <button
+            aria-label="Previous track"
+            class="playback-controls__btn playback-controls__btn--prev"
+            disabled=""
+          >
+            ⏮
+          </button>
+          <button
+            aria-label="Play"
+            class="playback-controls__btn playback-controls__btn--play"
+            disabled=""
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Next track"
+            class="playback-controls__btn playback-controls__btn--next"
+            disabled=""
+          >
+            ⏭
+          </button>
+        </div>
+        <div
+          class="seek-bar"
+        >
+          <span
+            aria-label="Current time"
+            class="seek-bar__time seek-bar__time--current"
+          >
+            0:00
+          </span>
+          <input
+            aria-label="Seek"
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            aria-valuetext="0:00 of 0:00"
+            class="seek-bar__input"
+            disabled=""
+            max="100"
+            min="0"
+            step="0.1"
+            type="range"
+            value="0"
+          />
+          <span
+            aria-label="Total duration"
+            class="seek-bar__time seek-bar__time--total"
+          >
+            0:00
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="now-playing-bar__section now-playing-bar__section--right"
+    >
+      <div
+        class="volume-control"
+      >
+        <span
+          aria-hidden="true"
+          class="volume-control__icon"
+        >
+          🔊
+        </span>
+        <input
+          aria-label="Volume"
+          aria-valuemax="1"
+          aria-valuemin="0"
+          aria-valuenow="1"
+          aria-valuetext="Volume 100%"
+          class="volume-control__slider"
+          max="1"
+          min="0"
+          step="0.01"
+          type="range"
+          value="1"
+        />
+      </div>
+    </div>
+  </footer>
+</div>
+`;
