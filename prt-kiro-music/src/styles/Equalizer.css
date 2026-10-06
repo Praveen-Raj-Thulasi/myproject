@@ -1,32 +1,81 @@
-/* Equalizer — animated vertical bars shown in NowPlayingBar */
-.equalizer {
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-  height: 24px;
-  margin-right: 10px;
+/* ── Circular disc equalizer ─────────────────────────────── */
+
+.eq-disc {
+  position: relative;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
+  margin-right: 12px;
 }
 
-.equalizer__bar {
-  width: 4px;
-  border-radius: 2px;
-  background: linear-gradient(to top, #FF6B00, #FFB347);
-  animation: eq-bounce 0.8s ease-in-out infinite alternate;
-  transform-origin: bottom;
+/* Outer dashed wave ring — spins when playing */
+.eq-disc__wave {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: none;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
 }
 
-.equalizer--paused .equalizer__bar {
-  animation-play-state: paused;
+.eq-disc--playing .eq-disc__wave {
+  animation: wave-spin 3s linear infinite;
+  opacity: 1;
 }
 
-.equalizer__bar:nth-child(1) { height: 60%; animation-delay: 0s;    animation-duration: 0.7s; }
-.equalizer__bar:nth-child(2) { height: 80%; animation-delay: 0.15s; animation-duration: 0.9s; }
-.equalizer__bar:nth-child(3) { height: 50%; animation-delay: 0.05s; animation-duration: 0.6s; }
-.equalizer__bar:nth-child(4) { height: 90%; animation-delay: 0.2s;  animation-duration: 0.8s; }
-.equalizer__bar:nth-child(5) { height: 65%; animation-delay: 0.1s;  animation-duration: 1.0s; }
+@keyframes wave-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
 
-@keyframes eq-bounce {
-  0%   { transform: scaleY(0.3); }
-  100% { transform: scaleY(1);   }
+/* Inner vinyl disc — counter-spins for a reel effect */
+.eq-disc__inner {
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #1a1a1a 0deg,
+    #2a2a2a 40deg,
+    #1a1a1a 80deg,
+    #2a2a2a 120deg,
+    #1a1a1a 160deg,
+    #2a2a2a 200deg,
+    #1a1a1a 240deg,
+    #2a2a2a 280deg,
+    #1a1a1a 320deg,
+    #2a2a2a 360deg
+  );
+  box-shadow:
+    0 0 0 2px #FF6B00,
+    inset 0 0 6px rgba(255, 107, 0, 0.3);
+  animation: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.eq-disc--playing .eq-disc__inner {
+  animation: disc-spin 2s linear infinite;
+  box-shadow:
+    0 0 0 2px #FF6B00,
+    0 0 12px rgba(255, 107, 0, 0.6),
+    inset 0 0 6px rgba(255, 107, 0, 0.3);
+}
+
+@keyframes disc-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Centre hole */
+.eq-disc__hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FF6B00;
+  box-shadow: 0 0 4px rgba(255, 107, 0, 0.8);
 }
